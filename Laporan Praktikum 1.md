@@ -1,3 +1,5 @@
-# praktikum-1
+# Laporan Praktikum-1
 
-Kelompok 14 Axel Gavan dan Charisma Ilham Saputra
+            Kelompok 14
+
+Axel Gavan dan Charisma Ilham Saputra
