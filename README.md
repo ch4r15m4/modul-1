@@ -1,3 +1,3 @@
 # praktikum-1
 
-Axel Gavan dan Charisma Ilham
+Kelompok 14 Axel Gavan dan Charisma Ilham Saputra
