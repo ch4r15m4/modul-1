@@ -14,9 +14,9 @@ Axel Gavan dan Charisma Ilham Saputra
 sudo lxc-copy -R ubutnu_php5.6 name -N ubuntu_landing
 ```
 
-![1](D:\Charisma\kuliah\SMT 5\SAS\laprak\1.PNG)
+![1](https://user-images.githubusercontent.com/93067446/138607582-06db35a7-0f53-43a4-abcb-3e53df1c2358.PNG)
 
-![2](D:\Charisma\kuliah\SMT 5\SAS\laprak\2.PNG)
+![2](https://user-images.githubusercontent.com/93067446/138607593-34a341f5-5144-4e3d-ba9e-40628d26e927.PNG)
 
 2. setelah berganti menjadi ubuntu_landing,  cobalah menyalakan ubuntu_landing (1)
 
@@ -24,7 +24,7 @@ sudo lxc-copy -R ubutnu_php5.6 name -N ubuntu_landing
 sudo lxc-attach -n ubuntu_landing
 ```
 
-![3](D:\Charisma\kuliah\SMT 5\SAS\laprak\3.png)
+![3](https://user-images.githubusercontent.com/93067446/138607605-127abbf4-2ce2-42bc-98ca-40f6def8805b.png)
 
 3. setelah ubuntu_landing menyala, step selanjutnya yaitu mengganti ip di ubuntu_landing (1)
 
@@ -32,7 +32,7 @@ sudo lxc-attach -n ubuntu_landing
 nano /etc/network/interfaces
 ```
 
-![4](D:\Charisma\kuliah\SMT 5\SAS\laprak\4.PNG)
+![4](https://user-images.githubusercontent.com/93067446/138607620-103e4aba-5db3-4cd5-b83f-5bc83f08edd3.PNG)
 
 4. setelah mengganti ip di ubuntu_landing lakukan Reboot untuk menyalakan ulang dan terlihat ip telah berganti (1)
 
@@ -40,7 +40,7 @@ nano /etc/network/interfaces
 reboot
 ```
 
-![5](D:\Charisma\kuliah\SMT 5\SAS\laprak\5.PNG)
+![5](https://user-images.githubusercontent.com/93067446/138607626-638c29fc-ae66-437b-8210-17184d5ac292.PNG)
 
 5. setelah berhasil mengganti ip kita coba ping ke google.com untuk mengecek apakah ada koneksi antara komputer klien dengan komputer server yang terhubung ke sebuah jaringan (1)
 
@@ -48,7 +48,7 @@ reboot
 ping google.com
 ```
 
-![6](D:\Charisma\kuliah\SMT 5\SAS\laprak\6.PNG)
+![6](https://user-images.githubusercontent.com/93067446/138607633-41fdabb0-f702-4690-b60d-2d0b25f75d68.PNG)
 
  
 
@@ -58,7 +58,7 @@ ping google.com
 sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release stretch --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
 ```
 
- ![7](D:\Charisma\kuliah\SMT 5\SAS\laprak\7.PNG)
+![7](https://user-images.githubusercontent.com/93067446/138607645-a5f09219-3221-419b-827c-91d707c3c04a.PNG)
 
 
 
@@ -68,7 +68,8 @@ sudo lxc-create -n debian_php5.6 -t download -- --dist debian --release stretch 
 Sudo lxc-ls -f
 ```
 
-![8](D:\Charisma\kuliah\SMT 5\SAS\laprak\8.PNG)
+![8](https://user-images.githubusercontent.com/93067446/138607651-c033471a-5bd7-4429-8511-7bdece150c6f.PNG)
+
 
 8. setelah berhasil mengunduh debian_php5.6, kita coba jalankan debian_php5.6 (2)
 
@@ -84,7 +85,8 @@ Sudo lxc-attach -n debian_php5.6
 Apt install nano net-tools curl -y
 ```
 
-![10](D:\Charisma\kuliah\SMT 5\SAS\laprak\10.PNG)
+![10](https://user-images.githubusercontent.com/93067446/138607658-806e7928-e1af-453c-a28a-3af5d42c5d45.PNG)
+
 
 10. setelah berhasil terinstal, kita bisa mengatur dan mengubah ip  pada debian_php5.6 (3)
 
@@ -92,7 +94,8 @@ Apt install nano net-tools curl -y
 nano /etc/network/interfaces
 ```
 
-![11](D:\Charisma\kuliah\SMT 5\SAS\laprak\11.PNG)
+![11](https://user-images.githubusercontent.com/93067446/138607660-98aab25c-369e-40d9-a313-56aefea32687.PNG)
+
 
  
 
@@ -102,7 +105,8 @@ nano /etc/network/interfaces
 ifconfig
 ```
 
-![12](D:\Charisma\kuliah\SMT 5\SAS\laprak\12.PNG)
+![12](https://user-images.githubusercontent.com/93067446/138607670-949d0b40-e498-457c-bddb-eaa557208b10.PNG)
+
 
 
 
@@ -112,7 +116,7 @@ ifconfig
 apt install nginx nginx-extras -y
 ```
 
-![13](D:\Charisma\kuliah\SMT 5\SAS\laprak\13.PNG)
+![13](https://user-images.githubusercontent.com/93067446/138607679-77bd911f-a007-4b5d-adb7-8aa2c0e4b364.PNG)
 
  
 
@@ -124,7 +128,7 @@ touch lxc_php5.6.dev
 nano lxc_php5.6.dev
 ```
 
-![15](D:\Charisma\kuliah\SMT 5\SAS\laprak\15.PNG)
+![15](https://user-images.githubusercontent.com/93067446/138607684-e176a481-8286-4ab0-bad8-5c5d4d59debf.PNG)
 
 ```
 cd ../sites-enabled
@@ -133,7 +137,7 @@ nginx -t
 nginx -s reload
 ```
 
-![16](D:\Charisma\kuliah\SMT 5\SAS\laprak\16.PNG)
+![16](https://user-images.githubusercontent.com/93067446/138607690-ae2e8166-20f2-4208-9bad-a1f99fe39b5d.PNG)
 
 
 
@@ -143,7 +147,7 @@ nginx -s reload
 nano /etc/hosts
 ```
 
-![17](D:\Charisma\kuliah\SMT 5\SAS\laprak\17.PNG)
+![17](https://user-images.githubusercontent.com/93067446/138607694-f6bb1bbb-955a-468f-ad55-232ea5456955.PNG)
 
  
 
@@ -155,13 +159,13 @@ mkdir lxc_php5.6
 cd lxc_php5.6
 ```
 
-![18](D:\Charisma\kuliah\SMT 5\SAS\laprak\18.PNG)
+![18](https://user-images.githubusercontent.com/93067446/138607700-6d2fa2c3-32d5-4fa8-9bfd-367105f5c980.PNG)
 
  
 
 17. setelah berhasil kita setting, selanjutnya kita mengisi file index.html (3)
 
-![18](D:\Charisma\kuliah\SMT 5\SAS\laprak\19.PNG)
+![19](https://user-images.githubusercontent.com/93067446/138607708-e5258315-73c2-4d74-b81a-c8e6b6c181c7.PNG)
 
  
 
@@ -171,13 +175,15 @@ cd lxc_php5.6
 curl -i http://lxc_php5.dev 
 ```
 
- ![20](D:\Charisma\kuliah\SMT 5\SAS\laprak\20.PNG)
+![20](https://user-images.githubusercontent.com/93067446/138607717-201283a7-955c-4dde-933b-e6519795bec4.PNG)
+
 
 
 
 19. step selanjutnya yaitu, masuk ubuntu_landing (4)
 
-![21](D:\Charisma\kuliah\SMT 5\SAS\laprak\21.PNG)
+![21](https://user-images.githubusercontent.com/93067446/138607723-f2874ed8-7308-4ff2-b453-2aea4d738f5a.PNG)
+
 
  
 
@@ -187,7 +193,8 @@ curl -i http://lxc_php5.dev
 nano lxc_5.6.dev
 ```
 
-![22](D:\Charisma\kuliah\SMT 5\SAS\laprak\22.PNG)
+![22](https://user-images.githubusercontent.com/93067446/138607730-60c8be08-642f-49df-a769-bbe7e3909920.PNG)
+
 
  
 
@@ -202,7 +209,8 @@ nginx -s reload
 
 ```
 
-![23](D:\Charisma\kuliah\SMT 5\SAS\laprak\23.PNG)
+![23](https://user-images.githubusercontent.com/93067446/138607734-19610ec7-ccfd-4215-acbf-8fe3609e88cc.PNG)
+
 
  
 
@@ -212,13 +220,14 @@ nginx -s reload
 cd /var/www/html/lxc_php5.6
 ```
 
-![24](D:\Charisma\kuliah\SMT 5\SAS\laprak\24.PNG)
+![24](https://user-images.githubusercontent.com/93067446/138607745-0951be78-469e-4be7-9a18-28e5ad4a7d48.PNG)
+
 
  
 
 23. setelah masuk file index.html, maka selanjutnya kita setting file index landing
 
-![25](D:\Charisma\kuliah\SMT 5\SAS\laprak\25.PNG)
+![25](https://user-images.githubusercontent.com/93067446/138607749-8b0e047b-eb13-4012-a8e6-f971b9ce4be5.PNG)
 
  
 
@@ -228,7 +237,8 @@ cd /var/www/html/lxc_php5.6
 curl -i http://lxc_landing.dev 
 ```
 
-![26](D:\Charisma\kuliah\SMT 5\SAS\laprak\26.PNG)
+![26](https://user-images.githubusercontent.com/93067446/138607756-7b0951c1-cb5b-4c5a-bf8b-d474e699c16b.PNG)
+
 
  
 
@@ -240,7 +250,8 @@ echo “lxc.start.auto =1” >> /var/lib/lxc/ubuntu_landing/config
 lxc-ls -f
 ```
 
-![27](D:\Charisma\kuliah\SMT 5\SAS\laprak\27.PNG)
+![27](https://user-images.githubusercontent.com/93067446/138607763-aa62e8b5-9396-459b-ac3c-c892cf124640.PNG)
+
 
  
 
@@ -252,7 +263,8 @@ sudo nano /etc/hosts
 
  
 
-![30](D:\Charisma\kuliah\SMT 5\SAS\laprak\30.PNG)
+![30](https://user-images.githubusercontent.com/93067446/138607775-0306b659-c918-42aa-8196-b9ea44973127.PNG)
+
 
  
 
@@ -264,7 +276,8 @@ sudo lxc-start -n ubuntu_php5.6
 lxc-ls -f
 ```
 
-![29](D:\Charisma\kuliah\SMT 5\SAS\laprak\29.PNG)
+![29](https://user-images.githubusercontent.com/93067446/138607792-349a56da-80dd-4e9e-abbe-6a6f2ec26fb4.PNG)
+
 
  
 
@@ -278,7 +291,8 @@ sudo nano vm.local
 
 29. setelah masuk, kita setup vm.local
 
-![35](D:\Charisma\kuliah\SMT 5\SAS\laprak\35.PNG)
+![35](https://user-images.githubusercontent.com/93067446/138607801-0256453a-dd9f-4927-9a5a-874a6f1bd223.PNG)
+
 
 
 
@@ -288,7 +302,8 @@ sudo nano vm.local
 curl -i http://vm.local
 ```
 
-![31](D:\Charisma\kuliah\SMT 5\SAS\laprak\31.PNG)
+![31](https://user-images.githubusercontent.com/93067446/138607810-123c8f19-d92c-463f-85ca-e3385b9fa4ed.PNG)
+
 
  
 
@@ -298,7 +313,8 @@ curl -i http://vm.local
 curl -i http://vm.local/app
 ```
 
-![33](D:\Charisma\kuliah\SMT 5\SAS\laprak\33.PNG)
+![33](https://user-images.githubusercontent.com/93067446/138607813-f411feca-5f8a-42f0-b2db-0eb2a19a8527.PNG)
+
 
 
 
@@ -308,7 +324,8 @@ curl -i http://vm.local/app
 curl -i http://vm.local/blog
 ```
 
-![34](D:\Charisma\kuliah\SMT 5\SAS\laprak\34.PNG)
+![34](https://user-images.githubusercontent.com/93067446/138607820-9a544454-b0d6-408f-9761-47bd4a34bd1e.PNG)
+
 
 
 
